@@ -1,0 +1,25 @@
+{
+  "name": "doit-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ilya Amelevich <ilya.amelevich@ya.ru>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "load-data": "yarn build && node ./dist/load.js",
+    "validate": "yarn build && node ./dist/check.js",
+    "mongo:start": "docker-compose -f docker-compose.yml up -d",
+    "mongo:stop": "docker-compose -f docker-compose.yml down"
+  },
+  "dependencies": {
+    "@typegoose/typegoose": "^7.6.0",
+    "csv-parse": "^4.15.4",
+    "mongoose": "5.10.18",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/mongoose": "5.10",
+    "@types/node": "^14.14.41"
+  }
+}

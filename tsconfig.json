@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "lib": ["es2019", "es2020.promise", "es2020.bigint", "es2020.string"],
+      "target": "es2019",
+      "module": "commonjs",
+      "declaration": true,
+      "removeComments": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "importHelpers": true,
+      "inlineSourceMap": true,
+      "inlineSources": true,
+      "moduleResolution": "node",
+      "outDir": "./dist",
+      "baseUrl": "./",
+      "incremental": true,
+      "resolveJsonModule": true,
+    }
+  }
+  
